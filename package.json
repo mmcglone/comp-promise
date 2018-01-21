@@ -8,7 +8,7 @@
     "test": "jasmine --config=spec/support/jasmine.json",
     "coverage": "nyc npm run -s test",
     "watch:lint": "watch 'npm run lint' ./",
-    "watch:unit": "watch 'npm -s run test' ./"
+    "watch:test": "watch 'npm -s run test' ./"
   },
   "repository": {
     "type": "git",
