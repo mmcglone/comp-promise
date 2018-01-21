@@ -1,6 +1,6 @@
 {
   "name": "comp-promise",
-  "version": "0.0.1-alpha0.0.4",
+  "version": "0.0.1-alpha0.0.5",
   "description": "A Javascript library of helpers for using promises in functional composition",
   "main": "index.js",
   "scripts": {
