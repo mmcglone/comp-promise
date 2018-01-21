@@ -1,0 +1,36 @@
+{
+  "name": "comp-promise",
+  "version": "0.0.1-alpha0.0.4",
+  "description": "A Javascript library of helpers for using using promises in functional composition",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js ./",
+    "test": "jasmine --config=spec/support/jasmine.json",
+    "coverage": "nyc npm run -s test",
+    "watch:lint": "watch 'npm run lint' ./",
+    "watch:unit": "watch 'npm -s run test' ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmcglone/comp-promise.git"
+  },
+  "keywords": [
+    "composition",
+    "promise"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "jasmine": "^2.9.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "nyc": "^11.4.1",
+    "watch": "^1.0.2"
+  }
+}
