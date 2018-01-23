@@ -27,17 +27,3 @@ const main = compose(
 main(123); // Returns a promise that resolves to 'John Smith'
 main(456); // Returns a promise that reject with a 'No such user' Error
 ```
-## API
-
-### catchP
-
-### ifP
-
-### thenP
-Given a function f and promise p that resolves to v, returns a promise that resolves
-to f(v) upon resolution of p.
-
-Returns a promise that rejects with reason r when p rejects with r.
-
-### AllP
-
