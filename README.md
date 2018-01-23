@@ -1,2 +1,2 @@
 # comp-promise
-A Javascript library of helpers for using promises in functional composition
+A tiny Javascript library to help with promises in functional composition
