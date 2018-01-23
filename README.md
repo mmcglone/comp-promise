@@ -7,14 +7,14 @@ const compose = require('lodash/fp/compose');
 const { thenP } = require('comp-promise');
 
 const fetchUser = id => {
-	if (id === 123) {
-		return Promise.resolve({
+  if (id === 123) {
+    return Promise.resolve({
       id: 123,
-		  firstName: 'John',
-		  lastName: 'Smith'
+      firstName: 'John',
+	  lastName: 'Smith'
     });
-	}
-	return Promise.reject(new Error('No such user'));
+  }
+  return Promise.reject(new Error('No such user'));
 };
 
 const fullName = user => `${user.firstName} ${user.lastName}`;
@@ -28,11 +28,16 @@ main(123); // Returns a promise that resolves to 'John Smith'
 main(456); // Returns a promise that reject with a 'No such user' Error
 ```
 ## API
-## thenP
+
+### catchP
+
+### ifP
+
+### thenP
 Given a function f and promise p that resolves to v, returns a promise that resolves
 to f(v) upon resolution of p.
 
 Returns a promise that rejects with reason r when p rejects with r.
 
-## catchP
-Given a function f and promise p that
+### AllP
+
