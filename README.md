@@ -1,5 +1,6 @@
 # comp-promise
 [![Build Status](https://travis-ci.org/mmcglone/comp-promise.svg?branch=master)](https://travis-ci.org/mmcglone/comp-promise)
+
 A tiny Javascript library to help with promises in functional composition
 
 ## Example Usage
