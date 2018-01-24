@@ -11,6 +11,7 @@
     ],
     "reporter": [
       "html",
+      "lcovonly",
       "text-summary"
   ],
   "report-dir": "./spec/coverage"

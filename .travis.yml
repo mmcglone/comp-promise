@@ -7,4 +7,5 @@ install:
 
 script:
   - npm run -s lint
-  - npm run -s test
+  - npm run -s coverage
+  - npm run -s report-coverage
