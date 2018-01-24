@@ -2,7 +2,7 @@
 A tiny Javascript library to help with promises in functional composition
 
 ## Example Usage
-```
+```javascript
 const compose = require('lodash/fp/compose');
 const { thenP } = require('comp-promise');
 
