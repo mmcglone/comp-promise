@@ -29,5 +29,5 @@ const main = compose(
 );
 
 main(123); // Returns a promise that resolves to 'John Smith'
-main(456); // Returns a promise that reject with a 'No such user' Error
+main(456); // Returns a promise that rejects with a 'No such user' Error
 ```

@@ -1,6 +1,9 @@
 language: node_js
 node_js:
-  - "6.11"
+  - "8.9"
+
+before_install:
+  - echo -e "registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
 install:
   - npm install
@@ -9,3 +12,9 @@ script:
   - npm run -s lint
   - npm run -s coverage
   - npm run -s report-coverage
+
+deploy:
+  - provider: script
+    script: ./scripts/deploy.sh
+    on:
+      tags: true

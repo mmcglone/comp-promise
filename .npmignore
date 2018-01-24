@@ -4,4 +4,5 @@
 .eslintrc.js
 .nyc_output
 .nycrc
+scripts
 spec
