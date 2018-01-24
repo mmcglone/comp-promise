@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "6.11"
 
+before_install:
+  - echo -e "registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
 install:
   - npm install
 
