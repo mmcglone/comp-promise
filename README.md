@@ -1,5 +1,6 @@
 # comp-promise
 [![Build Status](https://travis-ci.org/mmcglone/comp-promise.svg?branch=master)](https://travis-ci.org/mmcglone/comp-promise)
+[![Coverage Status](https://coveralls.io/repos/mmcglone/comp-promise/badge.svg?branch=master)](https://coveralls.io/r/mmcglone/comp-promise?branch=master)
 [![npm version](https://badge.fury.io/js/comp-promise.svg)](https://badge.fury.io/js/comp-promise)
 
 A tiny Javascript library to help with promises in functional composition
