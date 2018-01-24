@@ -7,6 +7,7 @@
     "lint": "eslint --ext .js ./",
     "test": "jasmine --config=spec/support/jasmine.json",
     "coverage": "nyc npm run -s test",
+    "report-coverage": "cat ./spec/coverage/lcov.info | coveralls",
     "watch:lint": "watch 'npm run lint' ./",
     "watch:test": "watch 'npm -s run test' ./"
   },
@@ -23,6 +24,7 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
