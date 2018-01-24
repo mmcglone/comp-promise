@@ -9,3 +9,9 @@ script:
   - npm run -s lint
   - npm run -s coverage
   - npm run -s report-coverage
+
+deploy:
+  - provider: script
+    script: .scripts/deploy.sh
+    on:
+      tags: true
