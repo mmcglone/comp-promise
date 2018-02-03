@@ -1,11 +1,11 @@
 const allP = require('./allP');
-const catchP = require('./catchP');
-const ifP = require('./ifP');
-const thenP = require('./thenP');
+const catchR = require('./catchR');
+const thenIf = require('./thenIf');
+const then = require('./then');
 
 module.exports = {
   allP,
-  catchP,
-  ifP,
-  thenP,
+  catchR,
+  thenIf,
+  then,
 };

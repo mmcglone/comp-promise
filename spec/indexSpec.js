@@ -1,25 +1,25 @@
-const compP = require('../index');
+const main = require('../index');
 const allP = require('../allP');
-const catchP = require('../catchP');
-const ifP = require('../ifP');
-const thenP = require('../thenP');
+const catchR = require('../catchR');
+const thenIf = require('../thenIf');
+const then = require('../then');
 
 describe('The main module', () => {
   it('should export an object', () => {
-    expect(compP).toEqual(jasmine.any(Object));
+    expect(main).toEqual(jasmine.any(Object));
   });
   describe('and that object should have', () => {
     it('allP as its allP method', () => {
-      expect(compP.allP).toBe(allP);
+      expect(main.allP).toBe(allP);
     });
-    it('catchP as its catchP method', () => {
-      expect(compP.catchP).toBe(catchP);
+    it('catchR as its catchR method', () => {
+      expect(main.catchR).toBe(catchR);
     });
-    it('ifP method', () => {
-      expect(compP.ifP).toBe(ifP);
+    it('thenIf as its thenIf method', () => {
+      expect(main.thenIf).toBe(thenIf);
     });
-    it('thenP as its thenP method', () => {
-      expect(compP.thenP).toBe(thenP);
+    it('then as its then method', () => {
+      expect(main.then).toBe(then);
     });
   });
 });
