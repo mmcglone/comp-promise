@@ -8,7 +8,7 @@ A tiny Javascript library to help with promises in functional composition
 ## Example Usage
 ```javascript
 const compose = require('lodash/fp/compose');
-const { thenP } = require('comp-promise');
+const { then } = require('comp-promise');
 
 const fetchUser = id => {
   if (id === 123) {
@@ -24,7 +24,7 @@ const fetchUser = id => {
 const fullName = user => `${user.firstName} ${user.lastName}`;
 
 const main = compose(
-  thenP(fullName),
+  then(fullName),
   fetchUser
 );
 
